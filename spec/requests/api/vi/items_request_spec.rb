@@ -2,12 +2,12 @@ require 'rails_helper'
 
 RSpec.describe 'Items API' do
   before :each do
-    @merchant_1 = create(:merchant, name: "Merchant1")
-    @merchant_2 = create(:merchant, name: "Merchant2")
-    @merchant_3 = create(:merchant, name: "Merchant3")
-    @merchant_4 = create(:merchant, name: "Merchant4")
-    @merchant_5 = create(:merchant, name: "Merchant5")
-    @merchant_6 = create(:merchant, name: "Merchant6")
+    @merchant_1 = create!(:merchant, name: "Merchant1")
+    @merchant_2 = create!(:merchant, name: "Merchant2")
+    @merchant_3 = create!(:merchant, name: "Merchant3")
+    @merchant_4 = create!(:merchant, name: "Merchant4")
+    @merchant_5 = create!(:merchant, name: "Merchant5")
+    @merchant_6 = create!(:merchant, name: "Merchant6")
     @item_1 = create(:item, merchant: @merchant_1)
     @item_2 = create(:item, merchant: @merchant_2)
     @item_3 = create(:item, merchant: @merchant_3)
